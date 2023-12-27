@@ -1,0 +1,15 @@
+<div class="container">
+    <H2 class="text-center ">All Categories</H2>
+
+    <div class="row">
+        <div class="col-sm-3 " *ngFor="let category of categories">
+            <div class="card">
+                <img src="{{category.categoryImage}}" width="200px" height="200px" alt="" class="card-img-top">
+                <div class="card-body">
+                    <h5 class="card-title">{{category.categoryName}}</h5>
+                    <button (click)="onButtonClick(category.categoryId)" class="btn btn-primary btn-block">Select</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
